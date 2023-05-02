@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="/style.css">
+  <title>Frontend Mentor | Interactive rating component</title>
+</head>
+<body>
+<div id="container-votos">
+  <div id="div-estrela">
+  <img src="/images/icon-star.svg" alt="icone estrela" id="icon-estrela">
+  </div>
+  <div class="texto">
+    <h1> Como nos saímos?</h1>
+    <p>  Por favor, nos ajude a melhorar classificando nosso suporte. Estamos sempre
+    buscando melhorar nosso trabalho, nos classifique!
+    </p>
+  </div>
+  <div id="votos">
+    <button  class="opcao-voto" id="primeiro" value="1">1</button>
+    <button  class="opcao-voto" id="segundo" value="2">2</button>
+    <button  class="opcao-voto" id="terceiro" value="3" >3</button>
+    <button  class="opcao-voto" id="quarto" value="4">4</button>
+    <button  class="opcao-voto" id="quinto" value="5">5</button>
+  </div>
+  <button id="enviar">Enviar</button>
+</div>
+<div id="container-agradecimento">
+<img src="/images/illustration-thank-you.svg" alt="ilustraçao agradecimento">
+<div id="valorresposta"></div>
+<h1> Muito Obrigado!</h1>
+
+
+<p class="texto"> Agradecemos gentilmente por você ter dado sua classificação para nós.  Lembre-se: qualquer coisa que possamos ajudar, entre em contato!</p>
+</div>
+
+<div id="container-nao-votou">
+  
+<img src="/images/illustration-thank-you.svg" alt="ilustraçao agradecimento">
+<div class="resposta">Não votou</div>
+<p class="texto">Por favor, clique em uma das classificações da tela anterior para que possa enviar sua nota!</p>
+
+<button id="voltar" >Voltar</button>
+
+</div>
+  <script src="./script.js"></script>
+</body>
+</html>

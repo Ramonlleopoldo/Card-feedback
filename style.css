@@ -1,0 +1,121 @@
+*{
+ font-family: 'Climate Crisis', cursive;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: hsl(216, 12%, 8%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+ justify-content: center;
+ height: 100vh;
+}
+/*Container principal com os votos*/
+#container-votos{
+  display: flex;
+  flex-direction: column;
+  width: 20em;
+  height: 20em;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: space-around;
+  background-color: hsl(213, 19%, 18%) 
+}
+/* Os botões dos votos de 1 a 5*/
+.opcao-voto{
+  width: 3em;
+  height: 3em;
+  border-radius: 50px;
+  border-color: transparent;
+  background-color: hsl(216, 12%, 54%) ;
+  transition: 1s;
+  cursor: pointer;
+}
+/*DIV onde esta as opçoes do votos*/
+#votos{
+  width: 18em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: hsl(213, 19%, 18%);
+ 
+}
+ /* paragrafros de textos*/
+.texto{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: hsl(213, 19%, 18%); 
+  height: 8em;
+  margin-left: 1em;
+  margin-right: 1em;
+  text-align: justify;
+}
+/*Div onde esta a imagem da estrela*/
+#div-estrela{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  background-color: hsl(216, 12%, 54%) ;
+  height: 2em;
+  width: 2em;
+  align-self: self-start;
+  margin-left: 1em;
+}
+ /*botoes de enviar da aba principal e também o de voltar da aba quando nao seleciona nem uma das opções*/
+#enviar,#voltar{
+  width: 20em;
+  height: 4em;
+  background-color: hsl(216, 12%, 54%) ;
+  border-radius: 20px;
+  border: transparent;
+  transition: 1s;
+  cursor: pointer;
+}
+/*hover dos botoes de voltar e tambem de enviar*/
+#enviar:hover:hover,#voltar:hover{
+  background-color:hsl(25, 97%, 53%) ;
+  border: black 2px solid;
+}
+/*hover dos botoes das opçoes de voto*/
+.opcao-voto:hover{
+  background-color:hsl(25, 97%, 53%) ;
+  border: black 2px solid;
+}
+/*display de agradecimento quando o usuario vota*/
+#container-agradecimento{
+  display: none;
+  flex-direction: column;
+  width: 20em;
+  height: 20em;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: space-around;
+  background-color: hsl(213, 19%, 18%) 
+}
+/*display quando o usuario clica em enviar quando nao seleciona nem uma nota*/
+#container-nao-votou{
+  display: none;
+  flex-direction: column;
+  width: 20em;
+  height: 20em;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: space-around;
+  background-color: hsl(213, 19%, 18%) 
+}
+/*div onde esta a resposta logo a baixo da imagem*/
+.resposta,#valorresposta{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  width: 10em;
+  height: 3em;
+  color: hsl(25, 97%, 53%);
+  background-color: white;
+}
